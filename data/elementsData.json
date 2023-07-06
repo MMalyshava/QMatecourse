@@ -1,0 +1,110 @@
+{
+    "section": {
+        "GeneralInformation": "General Information",
+        "items": "ItemsFacet",
+        "LimitItems": "LimitItems"
+    },
+
+    "field": {
+        "supplier": {
+            "type": "ID",
+            "metadata": "sap.m.Input",
+            "id": "Supplier"
+        },
+        "currency": {
+            "type": "ID",
+            "metadata": "sap.m.Input",
+            "id": "DocumentCurrency"
+        },
+        "purchasingGroup": {
+            "type": "ID",
+            "metadata": "sap.m.Input",
+            "id": "GeneralInformationFacet2::PurchasingGroup::Field-input"
+        },
+        "purchasingOrganization": {
+            "type": "ID",
+            "metadata": "sap.m.Input",
+            "id": "GeneralInformationFacet2::PurchasingOrganization::Field-input"
+        },
+        "companyCode": {
+            "type": "ID",
+            "metadata": "sap.m.Input",
+            "id": "GeneralInformationFacet2::CompanyCode::Field-input"
+        },
+        "itemCategory": {
+            "type": "Item",
+            "metadata": "sap.m.ComboBox",
+            "path": ""
+        },
+        "itemMaterial": {
+            "type": "Item",
+            "metadata": "sap.m.Input",
+            "path": "ManufacturerMaterial"
+        },
+        "itemQuantity": {
+            "type": "Item",
+            "metadata": "sap.m.Input",
+            "path": "OrderQuantity"
+        }
+    },
+    "combobox": {
+    "purchaseOrderType": {
+        "type": "Combobox",
+        "metadata": "sap.m.ComboBox",
+        "id": "GeneralInformationFacet1::PurchaseOrderType::Field-comboBoxEdit"
+    },
+    "itemCategory": {
+        "type": "Combobox",
+        "metadata": "sap.m.ComboBox",
+        "path": "",
+        "bindingContextPath": "/C_PurchaseOrderItemTP*PurchaseOrder=''*PurchaseOrderItem='"
+        }
+},
+"button": {
+
+    "createFromLR": {
+        "metadata": "sap.m.Button",
+        "id": "addEntry"
+    },
+    "navigate": {
+        "metadata": "sap.m.Button",
+        "id": "*ItemsFacet::Section-anchor"
+    },
+    "createNewItem": {
+        "metadata": "sap.m.Button",
+        "id": "ItemsFacet::addEntry"
+    },
+    "createFromOP": {
+        "metadata": "sap.m.Button",
+        "id": "activate"
+    },
+    "openCreatedItem": {
+        "metadata": "sap.m.Button",
+        "path": ""
+    },
+    "goListReport": {
+        "metadata": "sap.m.Button",
+        "id": "*listReportFilter-btnGo"
+    },
+    "selectItemListReport": {
+        "metadata": "sap.m.ColumnListItem"
+    },
+
+"generalInformation": {
+    "metadata": "sap.m.Button",
+    "id": "GeneralInformationCollectionFacet"
+},
+"items": {
+    "metadata": "sap.m.Button",
+    "id": "objectPage-anchBar-ui.ssuite.s2p.mm.pur.po.manage.st.s1::sap.suite.ui.generic.template.ObjectPage.view.Details::C_PurchaseOrderTP--ItemsFacet::Section-anchor"
+},
+"navigateToItem": {
+    "metadata": "sap.ui.comp.smartfield.SmartField",
+    "path": "PurchaseOrderItemStatus"
+},
+"applyItem": {
+    "metadata": "sap.m.Button",
+    "id": "footerObjectPageBackTo"
+}
+}
+}
